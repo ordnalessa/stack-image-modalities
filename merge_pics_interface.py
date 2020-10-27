@@ -6,17 +6,22 @@ from tkinter import filedialog, ttk
 
 from merge_pictures import MergePictures
 
-LARGEFONT = ("Verdana", 20)
-faf_path = ""
-nir_path = ""
-cfp_path = ""
-OUT_PATH = ""
+LARGEFONT = ("Verdana", 12)
+# faf_path = ""
+# nir_path = ""
+# cfp_path = ""
+# OUT_PATH = ""
 
 
 class StackImagesApp:
     def Page0(self, root):
         self.root = root
         self.root.title("Merge Image Modalities")
+        # self.screenwidth = self.root.winfo_screenwidth()
+        # self.screenheight = self.root.winfo_screenheight()
+        # self.root.geometry('{}x{}'.format(self.screenwidth // 2, self.screenheight // 2))
+
+        self.root.columnconfigure(2, weight=1)
 
         self.faf_path = tk.StringVar()
         self.nir_path = tk.StringVar()
@@ -24,79 +29,79 @@ class StackImagesApp:
         self.out_path = tk.StringVar()
 
         nir_lbl0 = tk.Label(self.root, text="Enter NIR directory.", font=LARGEFONT)
-        nir_lbl0.grid(column=2, row=1, pady=(15, 1))
+        nir_lbl0.grid(column=2, row=1, pady=(15, 1), sticky=tk.E+tk.W+tk.N+tk.S)
         nir_lbl1 = tk.Label(self.root, fg="red", font=LARGEFONT)
-        nir_lbl1.grid(column=2, row=3)
-        self.nir_txt = tk.Entry(self.root, width=60, font=LARGEFONT)
-        self.nir_txt.grid(column=2, row=2)
+        nir_lbl1.grid(column=2, row=3, sticky=tk.E+tk.W+tk.N+tk.S)
+        self.nir_txt = tk.Entry(self.root, font=LARGEFONT)
+        self.nir_txt.grid(column=2, row=2, padx=5, sticky=tk.E+tk.W+tk.N+tk.S)
         nir_btn0 = tk.Button(
             self.root, text="File Explorer", command=loadfile(self.nir_txt), font=LARGEFONT
         )
-        nir_btn0.grid(column=3, row=2, padx=(1, 15))
+        nir_btn0.grid(column=3, row=2, padx=(1, 15), sticky=tk.E+tk.W+tk.N+tk.S)
         nir_btn1 = tk.Button(
             self.root,
             text="Check",
             command=check_dir(nir_lbl1, self.nir_txt),
             font=LARGEFONT,
         )
-        nir_btn1.grid(column=1, row=2, padx=15)
+        nir_btn1.grid(column=1, row=2, padx=15, sticky=tk.E+tk.W+tk.N+tk.S)
 
         faf_lbl0 = tk.Label(self.root, text="Enter FAF directory.", font=LARGEFONT)
-        faf_lbl0.grid(column=2, row=4, pady=(15, 1))
+        faf_lbl0.grid(column=2, row=4, pady=(15, 1), sticky=tk.E+tk.W+tk.N+tk.S)
         faf_lbl1 = tk.Label(self.root, fg="red", font=LARGEFONT)
-        faf_lbl1.grid(column=2, row=6)
-        self.faf_txt = tk.Entry(self.root, width=60, font=LARGEFONT)
-        self.faf_txt.grid(column=2, row=5)
+        faf_lbl1.grid(column=2, row=6, sticky=tk.E+tk.W+tk.N+tk.S)
+        self.faf_txt = tk.Entry(self.root, font=LARGEFONT)
+        self.faf_txt.grid(column=2, row=5,padx=5, sticky=tk.E+tk.W+tk.N+tk.S)
         faf_btn0 = tk.Button(
             self.root, text="File Explorer", command=loadfile(self.faf_txt), font=LARGEFONT
         )
-        faf_btn0.grid(column=3, row=5, padx=(1, 15))
+        faf_btn0.grid(column=3, row=5, padx=(1, 15), sticky=tk.E+tk.W+tk.N+tk.S)
         faf_btn1 = tk.Button(
             self.root,
             text="Check",
             command=check_dir(faf_lbl1, self.faf_txt),
             font=LARGEFONT,
         )
-        faf_btn1.grid(column=1, row=5, padx=15)
+        faf_btn1.grid(column=1, row=5, padx=15, sticky=tk.E+tk.W+tk.N+tk.S)
 
         cfp_lbl0 = tk.Label(self.root, text="Enter CFP directory.", font=LARGEFONT)
-        cfp_lbl0.grid(column=2, row=7, pady=(15, 1))
+        cfp_lbl0.grid(column=2, row=7, pady=(15, 1), sticky=tk.E+tk.W+tk.N+tk.S)
         cfp_lbl1 = tk.Label(self.root, fg="red", font=LARGEFONT)
-        cfp_lbl1.grid(column=2, row=9)
-        self.cfp_txt = tk.Entry(self.root, width=60, font=LARGEFONT)
-        self.cfp_txt.grid(column=2, row=8)
+        cfp_lbl1.grid(column=2, row=9, sticky=tk.E+tk.W+tk.N+tk.S)
+        self.cfp_txt = tk.Entry(self.root, font=LARGEFONT)
+        self.cfp_txt.grid(column=2, row=8,padx=5, sticky=tk.E+tk.W+tk.N+tk.S)
         cfp_btn0 = tk.Button(
             self.root, text="File Explorer", command=loadfile(self.cfp_txt), font=LARGEFONT
         )
-        cfp_btn0.grid(column=3, row=8, padx=(1, 15))
+        cfp_btn0.grid(column=3, row=8, padx=(1, 15), sticky=tk.E+tk.W+tk.N+tk.S)
         cfp_btn1 = tk.Button(
             self.root,
             text="Check",
             command=check_dir(cfp_lbl1, self.cfp_txt),
             font=LARGEFONT,
         )
-        cfp_btn1.grid(column=1, row=8, padx=15)
+        cfp_btn1.grid(column=1, row=8, padx=15, sticky=tk.E+tk.W+tk.N+tk.S)
 
         out_lbl0 = tk.Label(self.root, text="Enter output directory.", font=LARGEFONT)
-        out_lbl0.grid(column=2, row=10, pady=(15, 1))
+        out_lbl0.grid(column=2, row=10, pady=(15, 1), sticky=tk.E+tk.W+tk.N+tk.S)
         out_lbl1 = tk.Label(self.root, fg="red", font=LARGEFONT)
-        out_lbl1.grid(column=2, row=12)
-        self.out_txt = tk.Entry(self.root, width=60, font=LARGEFONT)
-        self.out_txt.grid(column=2, row=11)
+        out_lbl1.grid(column=2, row=12, sticky=tk.E+tk.W+tk.N+tk.S)
+        self.out_txt = tk.Entry(self.root, font=LARGEFONT)
+        self.out_txt.grid(column=2, row=11,padx=5, sticky=tk.E+tk.W+tk.N+tk.S)
         out_btn0 = tk.Button(
             self.root, text="File Explorer", command=loadfile(self.out_txt), font=LARGEFONT
         )
-        out_btn0.grid(column=3, row=11, padx=(1, 15))
+        out_btn0.grid(column=3, row=11, padx=(1, 15), sticky=tk.E+tk.W+tk.N+tk.S)
         out_btn1 = tk.Button(
             self.root, text="Create", command=makedir(out_lbl1, self.out_txt), font=LARGEFONT
         )
-        out_btn1.grid(column=1, row=11, padx=15)
+        out_btn1.grid(column=1, row=11, padx=15, sticky=tk.E+tk.W+tk.N+tk.S)
 
         exit_btn = tk.Button(self.root, text="Exit", command=exit, font=LARGEFONT)
-        exit_btn.grid(column=13, row=13, pady=(5, 15), padx=(1, 15))
+        exit_btn.grid(column=13, row=13, pady=(5, 15), padx=(1, 15), sticky=tk.E+tk.W+tk.N+tk.S)
 
         next_btn = tk.Button(self.root, text="Next", command=self.Page1, font=LARGEFONT,)
-        next_btn.grid(column=12, row=13, pady=(5, 15), padx=(1, 1))
+        next_btn.grid(column=12, row=13, pady=(5, 15), padx=(1, 1), sticky=tk.E+tk.W+tk.N+tk.S)
 
     def Page1(self):
         page1 = tk.Toplevel(self.root)
@@ -105,32 +110,32 @@ class StackImagesApp:
         nir_lbl = tk.Label(page1, text="NIR files:", font=LARGEFONT)
         nir_lbl.grid(column=1, row=1, pady=(15, 1))
         self.nir_listbox = tk.Listbox(page1, width=40, font=LARGEFONT)
-        self.nir_listbox.grid(column=1, row=2, pady=5, padx=(15, 1))
+        self.nir_listbox.grid(column=1, row=2, pady=5, padx=(15, 1), sticky=tk.E+tk.W+tk.N+tk.S)
 
         faf_lbl = tk.Label(page1, text="FAF files:", font=LARGEFONT)
         faf_lbl.grid(column=2, row=1, pady=(15, 1))
         self.faf_listbox = tk.Listbox(page1, width=40, font=LARGEFONT)
-        self.faf_listbox.grid(column=2, row=2, pady=5, padx=(1, 1))
+        self.faf_listbox.grid(column=2, row=2, pady=5, padx=(1, 1), sticky=tk.E+tk.W+tk.N+tk.S)
 
         cfp_lbl = tk.Label(page1, text="CFP files:", font=LARGEFONT)
         cfp_lbl.grid(column=3, row=1, pady=(15, 1))
         self.cfp_listbox = tk.Listbox(page1, width=40, font=LARGEFONT)
-        self.cfp_listbox.grid(column=3, row=2, pady=5, padx=(1, 15))
+        self.cfp_listbox.grid(column=3, row=2, pady=5, padx=(1, 15), sticky=tk.E+tk.W+tk.N+tk.S)
 
         self.refresh_lists()
 
         prev_btn = tk.Button(
             page1, text="Previous", command=page1.destroy, font=LARGEFONT,
         )
-        prev_btn.grid(column=11, row=13, pady=(5, 15), padx=(1, 1))
+        prev_btn.grid(column=11, row=13, pady=(5, 15), padx=(1, 1), sticky=tk.E+tk.W+tk.N+tk.S)
 
         refr_btn = tk.Button(
             page1, text="Refresh", command=self.refresh_lists, font=LARGEFONT,
         )
-        refr_btn.grid(column=10, row=13, pady=(5, 15), padx=(1, 1))
+        refr_btn.grid(column=10, row=13, pady=(5, 15), padx=(1, 1), sticky=tk.E+tk.W+tk.N+tk.S)
 
         next_btn = tk.Button(page1, text="Confirm", command=self.Page2, font=LARGEFONT,)
-        next_btn.grid(column=12, row=13, pady=(5, 15), padx=(1, 1))
+        next_btn.grid(column=12, row=13, pady=(5, 15), padx=(1, 1), sticky=tk.E+tk.W+tk.N+tk.S)
 
     def Page2(self):
 
@@ -155,12 +160,12 @@ class StackImagesApp:
             style="black.Horizontal.TProgressbar",
         )
         progressbar["maximum"] = 100
-        progressbar.grid(column=1, row=3, padx=15, pady=15)
+        progressbar.grid(column=1, row=3, padx=15, pady=15, sticky=tk.E+tk.W+tk.N+tk.S)
 
         lbl0 = tk.Label(page2, text="Processing files for image ID:", font=LARGEFONT)
-        lbl0.grid(column=1, row=1, pady=(15, 1))
+        lbl0.grid(column=1, row=1, pady=(15, 1), sticky=tk.E+tk.W+tk.N+tk.S)
         lbl1 = tk.Label(page2, font=LARGEFONT)
-        lbl1.grid(column=1, row=2, pady=(1, 1))
+        lbl1.grid(column=1, row=2, pady=(1, 1), sticky=tk.E+tk.W+tk.N+tk.S)
 
         stackable = matchfiles(
             self.nir_txt.get(), self.faf_txt.get(), self.cfp_txt.get()
@@ -180,7 +185,7 @@ class StackImagesApp:
         lbl1.configure(text="Select 'Finish' to exit the program.")
 
         finish_btn = tk.Button(page2, text="Finish", command=exit, font=LARGEFONT)
-        finish_btn.grid(column=1, row=3, pady=(15, 15), padx=(15, 15))
+        finish_btn.grid(column=1, row=3, pady=(15, 15), padx=(15, 15), sticky=tk.E+tk.W+tk.N+tk.S)
 
     def refresh_lists(self):
         nir_path = self.nir_txt.get()
