@@ -6,14 +6,6 @@ from tkinter import filedialog, ttk
 
 from merge_pictures import MergePictures
 
-LARGEFONT = ("Verdana", 12)
-
-
-# faf_path = ""
-# nir_path = ""
-# cfp_path = ""
-# OUT_PATH = ""
-
 
 class StackImagesApp:
     def Page0(self, root):
@@ -79,7 +71,7 @@ class StackImagesApp:
             self.root,
             text="Check",
             command=check_dir(cfp_lbl1, self.cfp_txt),
-        
+
         )
         cfp_btn1.grid(column=1, row=8, padx=15, sticky=tk.E + tk.W + tk.N + tk.S)
 
