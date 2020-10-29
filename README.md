@@ -68,15 +68,15 @@
   1. Leave the fourth folder empty. The merged image modalities will be saved here.
   1. The folder structure should look like the following scheme:
 ```
-    .
-    ├── Near-Infrared Reflectance     # folder with NIR images
-        ├── P001_OD.tiff
-        └── ...
-    ├── Fundus Autofluorescence       # folder with FAF images
-        ├── P001_OD.tiff
-        └── ...
-    ├── Color Fundus Photography      # folder with CFP images 
-        ├── P001_OD.tiff
-        └── ...
-    └── Output                        # empty output folder
+.
+├── Near-Infrared Reflectance     # folder with NIR images
+  ├── P001_OD.tiff
+  └── ...
+├── Fundus Autofluorescence       # folder with FAF images
+  ├── P001_OD.tiff
+  └── ...
+├── Color Fundus Photography      # folder with CFP images 
+  ├── P001_OD.tiff
+  └── ...
+└── Output                        # empty output folder
 ```
