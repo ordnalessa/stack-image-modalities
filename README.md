@@ -64,8 +64,10 @@
 
 1. Download the executable [StackImages.exe](https://github.com/ordnalessa/stack-image-modalities/raw/main/StackImages.exe) from this repository.
 1. Create four directories and name them as you wish.
-  1. Save one image modality in the three input folders. Make sure that image modalities of the same eye have the same filename.
-  1. Leave the fourth folder empty. The merged image modalities will be saved here.
+  1. Save one image modality in the three input folders. 
+    * Make sure that image modalities of the same eye have the same filename.
+  1. Leave the fourth folder empty. 
+    * The merged image modalities will be saved here.
   1. The folder structure should look like the following scheme:
 ```
 .
@@ -80,3 +82,10 @@
   └── ...
 └── Output                        # empty output folder
 ```
+1. Run executable file.
+1. Point to folders created above.
+  * Carefully choose folders for the right modalities.
+1. Click on Next.
+1. Check if files contained in folders are correct. If they are, click Continue.
+1. Wait for the program to complete.
+1. Click Finish.
