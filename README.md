@@ -46,16 +46,9 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [Instructions for Windows systems](#Instructions (Windows))
-* [Instructions for Linux systems](#Instructions (Linux))
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
+* [Instructions for Windows systems](#instructions-Windows)
+* [Instructions for Linux systems](#instructions-linux)
+
 
 
 
