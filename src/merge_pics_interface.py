@@ -4,7 +4,7 @@ from sys import exit
 import tkinter as tk
 from tkinter import filedialog, ttk
 
-from merge_pictures import MergePictures
+from src.merge_pictures import MergePictures
 
 
 class StackImagesApp:
