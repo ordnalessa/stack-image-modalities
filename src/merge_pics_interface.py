@@ -86,7 +86,7 @@ class StackImagesApp:
         )
         out_btn0.grid(column=3, row=11, padx=(1, 15), sticky=tk.E + tk.W + tk.N + tk.S)
         out_btn1 = tk.Button(
-            self.root, text="Create", command=makedir(out_lbl1, self.out_txt),
+            self.root, text="Check", command=check_dir(out_lbl1, self.out_txt),
         )
         out_btn1.grid(column=1, row=11, padx=15, sticky=tk.E + tk.W + tk.N + tk.S)
 
@@ -184,6 +184,13 @@ class StackImagesApp:
         nir_path = self.nir_txt.get()
         faf_path = self.faf_txt.get()
         cfp_path = self.cfp_txt.get()
+        out_path = self.out_txt.get()
+
+        os.makedirs(nir_path, exist_ok=True)
+        os.makedirs(faf_path, exist_ok=True)
+        os.makedirs(cfp_path, exist_ok=True)
+        os.makedirs(out_path, exist_ok=True)
+
         if os.path.isdir(nir_path):
             nir_filelist = os.listdir(nir_path)
             self.nir_listbox.delete(0, tk.END)
