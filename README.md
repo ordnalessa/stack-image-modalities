@@ -49,25 +49,35 @@
 1. Open executable file:
 2. If requested, allow windows to execute the file by:
  * Click on "More info".
- 
-    ![win-screen1](images/win-screen1.PNG?raw=true "win-screen1")
+
+<p align="left">
+  <img height="100" src="images/win-screen1.PNG">
+</p> 
     
  * Click on "Run anyway".
  
-    ![win-screen2](images/win-screen2.PNG?raw=true "win-screen2")
+<p align="left">
+  <img height="100" src="images/win-screen2.PNG">
+</p> 
 
 3. Point to folders created above.
   * Carefully choose folders for the right modalities.
   
-    ![win-screen4](images/win-screen4.PNG?raw=true "win-screen4")
-    
+<p align="left">
+  <img height="100" src="images/win-screen3.PNG">
+</p>    
+
 4. Click on "Next".
 5. Check if files contained in folders are correct. If they are, click Continue.
 
-![win-screen5](images/win-screen5.PNG?raw=true "win-screen5")
+<p align="left">
+  <img height="100" src="images/win-screen5.PNG">
+</p>  
 
 6. Wait for the program to complete.
 7. Click Finish.
 
-![win-screen6](images/win-screen6.PNG?raw=true "win-screen6")
+<p align="left">
+  <img height="100" src="images/win-screen6.PNG">
+</p>  
 
