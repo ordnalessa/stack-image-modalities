@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img height="500" src="images/Icon.jpg">
+  <img height="500" src="images/icon.jpg">
 </p>
     A tool to easily merge co-registered retinal images in the Near Infra-red, Auto-fluorescence and Color fundus modalities. The tool creates a single file including the three modalities so that they can be uploaded on Grand Challenge and the RPD quantification algorithm can make predictions.
 
