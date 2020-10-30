@@ -82,6 +82,28 @@
 
 ## Instructions (Linux)
 
+1. Download the executable [StackImages](https://github.com/ordnalessa/stack-image-modalities/raw/main/Download/StackImages) from this repository.
+1. Create four directories and name them as you wish.
+  1. Save one image modality in the three input folders. 
+    * Make sure that image modalities of the same eye have the same filename.
+  1. Leave the fourth folder empty. 
+    * The merged image modalities will be saved here.
+  1. The folder structure should look like the following scheme:
+```
+.
+├── Near-Infrared Reflectance     # folder with NIR images
+  ├── P001_OD.tiff
+  └── ...
+├── Fundus Autofluorescence       # folder with FAF images
+  ├── P001_OD.tiff
+  └── ...
+├── Color Fundus Photography      # folder with CFP images 
+  ├── P001_OD.tiff
+  └── ...
+└── Output                        # empty output folder
+```
+
+
 ## Contribute
 
 To include new changes in the executable, run this command in your terminal:
