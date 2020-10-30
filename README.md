@@ -22,7 +22,7 @@
 
 ### Preparation
 
-1. Download the executable [StackImages.exe](https://github.com/ordnalessa/stack-image-modalities/raw/main/StackImages.exe) from this repository.
+1. Download the executable [StackImages.exe](https://github.com/ordnalessa/stack-image-modalities/raw/main/Download/StackImages.exe) from this repository.
 1. Create four directories and name them as you wish.
   1. Save one image modality in the three input folders. 
     * Make sure that image modalities of the same eye have the same filename.
