@@ -68,16 +68,16 @@
 </p>    
 
 4. Click on "Next".
-5. Check if files contained in folders are correct. If they are, click Continue.
+5. Check if files contained in folders are correct. If they are, click "Confirm".
 
 <p align="left">
   <img height="100" src="images/win-screen5.PNG">
 </p>  
 
 6. Wait for the program to complete.
-7. Click Finish.
+7. Click "Finish".
 
 <p align="left">
-  <img height="100" src="images/win-screen6.PNG">
+  <img height="100" src="images/win-screen3.PNG">
 </p>  
 
