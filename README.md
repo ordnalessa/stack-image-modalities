@@ -64,7 +64,7 @@
   * Carefully choose folders for the right modalities.
   
 <p align="left">
-  <img height="250" src="images/win-screen3.PNG">
+  <img height="250" src="images/win-screen4.PNG">
 </p>    
 
 4. Click on "Next".
