@@ -46,6 +46,7 @@
  * Click on "More info".
  
     ![win-screen1](images/win-screen1.PNG?raw=true "win-screen1")
+    
  * Click on "Run anyway".
  
     ![win-screen2](images/win-screen2.PNG?raw=true "win-screen2")
@@ -54,11 +55,14 @@
   * Carefully choose folders for the right modalities.
   
     ![win-screen4](images/win-screen4.PNG?raw=true "win-screen4")
+    
 4. Click on "Next".
 5. Check if files contained in folders are correct. If they are, click Continue.
 
 ![win-screen5](images/win-screen5.PNG?raw=true "win-screen5")
+
 6. Wait for the program to complete.
 7. Click Finish.
 
 ![win-screen6](images/win-screen6.PNG?raw=true "win-screen6")
+
