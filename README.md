@@ -21,6 +21,8 @@
 
 ## Instructions (Windows)
 
+### Preparation
+
 1. Download the executable [StackImages.exe](https://github.com/ordnalessa/stack-image-modalities/raw/main/StackImages.exe) from this repository.
 1. Create four directories and name them as you wish.
   1. Save one image modality in the three input folders. 
@@ -41,6 +43,9 @@
   └── ...
 └── Output                        # empty output folder
 ```
+
+### Usage
+
 1. Open executable file:
 2. If requested, allow windows to execute the file by:
  * Click on "More info".
