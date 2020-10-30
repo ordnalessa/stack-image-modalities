@@ -51,33 +51,33 @@
  * Click on "More info".
 
 <p align="left">
-  <img height="100" src="images/win-screen1.PNG">
+  <img height="250" src="images/win-screen1.PNG">
 </p> 
     
  * Click on "Run anyway".
  
 <p align="left">
-  <img height="100" src="images/win-screen2.PNG">
+  <img height="250" src="images/win-screen2.PNG">
 </p> 
 
 3. Point to folders created above.
   * Carefully choose folders for the right modalities.
   
 <p align="left">
-  <img height="100" src="images/win-screen3.PNG">
+  <img height="250" src="images/win-screen4.PNG">
 </p>    
 
 4. Click on "Next".
-5. Check if files contained in folders are correct. If they are, click "Confirm".
+5. Check if files contained in folders are correct. If they are, click Continue.
 
 <p align="left">
-  <img height="100" src="images/win-screen5.PNG">
+  <img height="250" src="images/win-screen5.PNG">
 </p>  
 
 6. Wait for the program to complete.
-7. Click "Finish".
+7. Click Finish.
 
 <p align="left">
-  <img height="100" src="images/win-screen3.PNG">
+  <img height="250" src="images/win-screen6.PNG">
 </p>  
 
