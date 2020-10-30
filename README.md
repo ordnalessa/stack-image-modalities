@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img height="500" src="images/icon.jpg">
+  <img height="500" src="images/Icon.jpg">
 </p>
     A tool to easily merge co-registered retinal images in the Near Infra-red, Auto-fluorescence and Color fundus modalities. The tool creates a single file including the three modalities so that they can be uploaded on Grand Challenge and the RPD quantification algorithm can make predictions.
 
@@ -10,7 +10,6 @@
 
 
 
-<!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [Instructions for Windows systems](#instructions-Windows)
@@ -81,3 +80,12 @@
   <img height="250" src="images/win-screen6.PNG">
 </p>  
 
+## Instructions (Linux)
+
+## Contribute
+
+To include new changes in the executable, run this command in your terminal:
+
+```
+pyinstaller --onefile --windowed --icon=images/app_icon.ico --name=StackImages main.py 
+```
